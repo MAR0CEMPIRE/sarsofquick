@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarsof Quick — Comida rápida en Logroño</title>
+  <meta name="description" content="Sarsof Quick Logroño: bocadillos, wraps, tacos y hamburguesas de comida rápida. C/San Millán 10, Logroño. Pedidos: 604 90 34 99.">
+
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Work+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos externa -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-bar">
+    <div class="logo">
+      <span class="logo-name">SARSOF QUICK</span>
+      <span class="logo-place">LOGROÑO</span>
+    </div>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#menu">Carta</a>
+      <a href="#historia">Concepto</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="btn-call" href="tel:+34604903499">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Pedidos
+      </a>
+      <button class="btn-menu-toggle" id="menuToggleBtn" aria-label="Abrir menú" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+          <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <span class="status-pill" id="statusPill"><span class="status-dot"></span><span id="statusText">Comprobando horario…</span></span>
+    <h1>SABORES<br>ATREVIDOS,<br><span>SERVICIO&nbsp;RÁPIDO</span></h1>
+    <p class="lead">Bocadillos, wraps y hamburguesas con receta propia, hechos al momento. Comida rápida con una vuelta gourmet, en pleno Logroño.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-primary" href="#menu">Ver la carta</a>
+      <a class="btn btn-outline" href="#ubicacion">Cómo llegar</a>
+    </div>
+    <div class="hero-badges">
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 6.5L21 10l-5 4.2L17.4 21 12 17.3 6.6 21 8 14.2 3 10l6.6-1.5z"/></svg>
+        Recetas propias
+      </div>
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        Hecho al momento
+      </div>
+      <div class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+        C/ San Millán 10
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="schedule-bar">
+  <div class="container">
+    <div class="schedule-item"><b>Mar · Mié · Jue</b>&nbsp;13:00–16:30 y 20:00–23:00</div>
+    <div class="schedule-item"><b>Vie · Sáb · Dom</b>&nbsp;13:00–16:30 y 20:00–23:30</div>
+    <div class="schedule-item"><b>Lunes</b>&nbsp;cerrado</div>
+  </div>
+</div>
+
+<section id="menu">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">La carta</span>
+      <h2>Nuestro menú</h2>
+    </div>
+
+    <div class="menu-tabs">
+      <button class="menu-tab is-active" data-tab="picoteo">Picoteo</button>
+      <button class="menu-tab" data-tab="bocadillos">Bocadillos</button>
+      <button class="menu-tab" data-tab="hamburguesas">Hamburguesas</button>
+      <button class="menu-tab" data-tab="platos">Platos</button>
+      <button class="menu-tab" data-tab="wraps">Wraps</button>
+      <button class="menu-tab" data-tab="infantil">Infantil</button>
+      <button class="menu-tab" data-tab="extras">Extras</button>
+      <button class="menu-tab" data-tab="bebidas">Bebidas</button>
+    </div>
+
+    <div class="menu-panel is-active" id="panel-picoteo">
+      <div class="menu-list">
+        <div class="menu-list-row">
+          <b>Ración nuggets (8 uds)</b>
+          <span class="menu-list-price">5,00€</span>
+        </div>
+        <div class="menu-list-row">
+          <b>Chili cheese bites</b>
+          <span class="menu-list-price">6,00€</span>
+        </div>
+        <div class="menu-list-row">
+          <b>Patatas bravas</b>
+          <span class="menu-list-price">3,50€</span>
+        </div>
+        <div class="menu-list-row">
+          <b>Patatas Sarsof</b>
+          <span class="menu-list-price">4,50€</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-bocadillos">
+      <div class="menu-note">Crea tu menú por 2€ más: bocadillo a elegir, patatas fritas, refresco o agua y dos salsas.</div>
+      <div class="menu-item-grid">
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/bocadillo_corral.jpg" alt="Corral" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🥪</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Corral</span></div>
+            <p class="menu-item-desc">Pechuga de pollo a la plancha, lechuga, cebolla caramelizada, tomate y salsa alioli.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/bocadillo_chaplin.png" alt="Chaplin" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🥪</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Chaplin</span></div>
+            <p class="menu-item-desc">Carne burger 100% vacuno, lechuga, tomate, cebolla caramelizada, queso y salsa barbacoa.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/bocadillo_calamar.jpg" alt="Calamardo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🦑</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Calamardo</span></div>
+            <p class="menu-item-desc">Calamares especiales, alioli y salsa diablo.</p>
+          </div>
+          <div class="menu-item-price">7,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/sarsof_bocadillo.jpg" alt="Sarsof" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🥪</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Sarsof</span></div>
+            <p class="menu-item-desc">Pechuga de pollo marinada, cebolla a la plancha, repollo fresco, lombarda, tomate, queso y salsa samurái.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/bocadillo_vegetal.jpg" alt="Vegetal" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🥬</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Vegetal</span></div>
+            <p class="menu-item-desc">Lechuga, huevo, atún, tomate, maíz, repollo, lombarda y fiambre de pavo.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/bocadillo_brooklyn.jpg" alt="Brooklyn" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🥪</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Brooklyn</span></div>
+            <p class="menu-item-desc">Queso, fiambre de pavo, pechuga de pollo a la plancha, patatas fritas y pimiento verde.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/bocadillo_crispy_chicken.jpg" alt="Crispy Chicken" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🍗</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Crispy Chicken</span></div>
+            <p class="menu-item-desc">Pollo crujiente, maíz, lechuga, repollo, tomate, lombarda, salsa cheddar y cebolla crunchy.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-hamburguesas">
+      <div class="menu-item-grid">
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/hamburguesa_veggie.jpg" alt="Veggie" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🌱</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Veggie</span></div>
+            <p class="menu-item-desc">Hamburguesa 100% vegetal, cebolla, tomate, lechuga y pepinillo.</p>
+          </div>
+          <div class="menu-item-price">9,40€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/hamburguesa_clasica.jpg" alt="Clásica" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🍔</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Clásica</span></div>
+            <p class="menu-item-desc">Carne 100% ternera, queso, huevo frito, cebolla caramelizada, tomate, lechuga, pepinillo y salsa cheddar.</p>
+          </div>
+          <div class="menu-item-price">8,40€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/hamburguesa_mediterranea.jpg" alt="Mediterránea" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🦑</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Mediterránea</span></div>
+            <p class="menu-item-desc">Hamburguesa de calamar, huevo, queso, cebolla, tomate, lechuga, pepinillo y salsa alioli.</p>
+          </div>
+          <div class="menu-item-price">8,40€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/hamburguesa_crunchy_chicken.jpg" alt="Crunchy Chicken" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🍗</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Crunchy Chicken</span></div>
+            <p class="menu-item-desc">Carne de pollo crujiente, queso, huevo, cebolla crunchy, tomate, lechuga, pepinillo y salsa cheddar.</p>
+          </div>
+          <div class="menu-item-price">7,90€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-platos">
+      <div class="menu-item-grid">
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/plato_griego.jpg" alt="Pollo estilo griego" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🍽️</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Pollo estilo griego</span></div>
+            <p class="menu-item-desc">Ensalada, patatas fritas, huevo frito y salsa yogur.</p>
+          </div>
+          <div class="menu-item-price">7,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/platos-pollo-marinado.jpg" alt="Pollo marinado" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🍽️</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Pollo marinado</span></div>
+            <p class="menu-item-desc">Ensalada, queso, huevo frito, patatas fritas y salsa Sarsof.</p>
+          </div>
+          <div class="menu-item-price">7,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/platos-crunchy-chicken.jpg" alt="Crunchy Chicken" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🍗</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Crunchy Chicken</span></div>
+            <p class="menu-item-desc">Ensalada, patatas fritas, huevo frito, queso y salsa cóctel.</p>
+          </div>
+          <div class="menu-item-price">7,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/plato_alitas_pollo.jpg" alt="Alitas de pollo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🍗</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Alitas de pollo</span></div>
+            <p class="menu-item-desc">Marinadas, ensalada, patatas fritas y alioli.</p>
+          </div>
+          <div class="menu-item-price">7,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/platos-carne-burger.jpg" alt="Carne burger" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🍔</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Carne burger</span></div>
+            <p class="menu-item-desc">Ensalada, queso, huevo frito, patatas fritas y salsa barbacoa.</p>
+          </div>
+          <div class="menu-item-price">7,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/platos-pollo-plancha.jpg" alt="Pollo a la plancha" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🍽️</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Pollo a la plancha</span></div>
+            <p class="menu-item-desc">Ensalada, patatas fritas, huevo frito, queso y salsa alioli.</p>
+          </div>
+          <div class="menu-item-price">7,90€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-wraps">
+      <div class="menu-note">Crea tu menú por 2€ más: wrap a elegir, patatas fritas, refresco o agua y dos salsas.</div>
+      <div class="menu-item-grid">
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/wraps-vegetal.jpg" alt="Vegetal" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🌯</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Vegetal</span></div>
+            <p class="menu-item-desc">Lechuga, tomate, lombarda, aceituna, repollo fresco, fiambre de pavo, cebolla, atún, mayonesa y huevo.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/wraps-carne.jpg" alt="Carne" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🌯</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Carne</span></div>
+            <p class="menu-item-desc">Carne picada, queso, lechuga, repollo fresco, lombarda, cebolla, maíz, aceituna, salsa cheddar y mostaza suave.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/wraps-crunchy-chicken.jpg" alt="Crunchy Chicken" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🌯</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Crunchy Chicken</span></div>
+            <p class="menu-item-desc">Pechuga de pollo crujiente, queso, lechuga, aceituna, repollo fresco, lombarda, cebolla, salsa cheddar, samurái y maíz.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/wraps-griego.jpg" alt="Griego" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🌯</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Griego</span></div>
+            <p class="menu-item-desc">Pollo estilo griego, fiambre de pavo, lechuga, lombarda, maíz, aceituna, cebolla, salsa cheddar y salsa de yogur.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-photo">
+            <img src="imagenes/wraps-sarsof.jpg" alt="Sarsof" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <span class="menu-item-photo-fallback">🌯</span>
+          </div>
+          <div class="menu-item-body">
+            <div class="menu-item-header"><span class="menu-item-name">Sarsof</span></div>
+            <p class="menu-item-desc">Pechuga de pollo marinada, lechuga, lombarda, maíz, aceituna, cebolla y salsa Sarsof.</p>
+          </div>
+          <div class="menu-item-price">6,90€</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-infantil">
+      <div class="menu-list">
+        <div class="menu-list-row"><b>Alitas de pollo, patatas fritas, zumo o agua</b><span class="menu-list-price">6,00€</span></div>
+        <div class="menu-list-row"><b>Hamburguesa (crunchy o carne), patatas fritas, zumo o agua</b><span class="menu-list-price">6,00€</span></div>
+        <div class="menu-list-row"><b>Nuggets, patatas fritas, zumo o agua</b><span class="menu-list-price">6,00€</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-extras">
+      <div class="menu-list">
+        <div class="menu-list-row"><b>Queso</b><span class="menu-list-price">0,50€</span></div>
+        <div class="menu-list-row"><b>Fiambre de pavo</b><span class="menu-list-price">0,50€</span></div>
+        <div class="menu-list-row"><b>Salsa cheddar</b><span class="menu-list-price">0,50€</span></div>
+        <div class="menu-list-row"><b>Huevo</b><span class="menu-list-price">0,70€</span></div>
+        <div class="menu-list-row"><b>Atún</b><span class="menu-list-price">0,70€</span></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" id="panel-bebidas">
+      <div class="menu-list">
+        <div class="menu-list-row"><b>Agua</b><span class="menu-list-price">1,10€</span></div>
+        <div class="menu-list-row"><b>Aquarius</b><span class="menu-list-price">2,00€</span></div>
+        <div class="menu-list-row"><b>Kas</b><span class="menu-list-price">1,50€</span></div>
+        <div class="menu-list-row"><b>Coca-Cola</b><span class="menu-list-price">1,50€</span></div>
+        <div class="menu-list-row"><b>Tónica</b><span class="menu-list-price">2,00€</span></div>
+        <div class="menu-list-row"><b>Sprite</b><span class="menu-list-price">1,50€</span></div>
+        <div class="menu-list-row"><b>Zumo</b><span class="menu-list-price">1,80€</span></div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="historia">
+  <div class="container">
+    <div class="story-layout">
+      <div class="story-text">
+        <span class="eyebrow">El concepto</span>
+        <h2 style="margin-top:8px; font-size:34px;">Comida rápida, hecha de verdad</h2>
+        <p style="margin-top:16px;">En Sarsof Quick preparamos bocadillos, wraps y hamburguesas al momento, con ingredientes frescos y salsas propias de la casa. Comida rápida de verdad, sin perder ni un minuto ni un sabor.</p>
+        <p>Cada ficha de la carta lleva salsa propia de la casa — samurái, sarsof, alioli, diablo — hecha aquí, sin atajos.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v6M12 22v-6M4.93 4.93l4.24 4.24M14.83 14.83l4.24 4.24M2 12h6M16 12h6M4.93 19.07l4.24-4.24M14.83 9.17l4.24-4.24"/></svg>
+          <span>Ingredientes<br>frescos</span>
+        </div>
+        <div class="feature-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M8.5 8.5c-2 1.5-3 4-2 6.5 1.5 3.5 5 4 7 2 1.3-1.3 1.5-3 1-4.5"/><path d="M15 4c1 1 1 3 0 4"/><path d="M12 2c2 1 3 3 2 5"/></svg>
+          <span>Salsas de<br>la casa</span>
+        </div>
+        <div class="feature-card">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <span>Listo en<br>minutos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ubicacion">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Encuéntranos</span>
+      <h2>En pleno Logroño</h2>
+    </div>
+    <div class="location-layout">
+      <div class="location-card">
+        <div class="location-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg>
+          <div>
+            <div class="row-label">Dirección</div>
+            C/ San Millán, Nº 10 · 26004 Logroño
+          </div>
+        </div>
+        <div class="location-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          <div>
+            <div class="row-label">Horario</div>
+            Mar-Jue 13:00–16:30 y 20:00–23:00 · Vie-Dom 13:00–16:30 y 20:00–23:30 · Lunes cerrado
+          </div>
+        </div>
+        <div class="location-row">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 20l-5.447-2.724A1 1 0 0 1 3 16.382V5.618a1 1 0 0 1 1.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0 0 21 18.382V7.618a1 1 0 0 0-.553-.894L15 4m0 13V4m0 0L9 7"/></svg>
+          <div>
+            <div class="row-label">Cómo llegar</div>
+            En pleno centro de Logroño, a un paso de Calle Laurel.
+          </div>
+        </div>
+      </div>
+      <div class="map-frame">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=Calle+San+Mill%C3%A1n+10,+26004+Logro%C3%B1o&output=embed">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Hablemos</span>
+      <h2>Contacto</h2>
+    </div>
+    <div class="contact-card">
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <div>
+          <div class="row-label">Pedidos por teléfono</div>
+          <a class="link" href="tel:+34604903499">604 90 34 99</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg>
+        <div>
+          <div class="row-label">Email</div>
+          <a class="link" href="mailto:sarsofquick@gmail.com">sarsofquick@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-row">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        <div>
+          <div class="row-label">Instagram</div>
+          <a class="link" href="https://www.instagram.com/sarsofquick/" target="_blank" rel="noopener">@sarsofquick</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <div class="logo-name">SARSOF QUICK</div>
+        <div class="logo-place">LOGROÑO</div>
+      </div>
+      <nav class="footer-links">
+        <a href="#menu">Carta</a>
+        <a href="#historia">Concepto</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#contacto">Contacto</a>
+        <a href="https://www.instagram.com/sarsofquick/" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Sarsof Quick · C/ San Millán 10, Logroño</span>
+      <span>Diseño de referencia — sustituir fotos y textos finales antes de publicar</span>
+    </div>
+  </div>
+</footer>
+
+<!-- JavaScript externo -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
